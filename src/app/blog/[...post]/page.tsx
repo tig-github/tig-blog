@@ -6,7 +6,8 @@ interface PageProps {
 }
 
 export default async function Page(params: PageProps) {
-  let post: any = await getPost(params.params.post);
+  let awaited_params = await params.params;
+  let post: any = await getPost(awaited_params.post);
   return (
     <div className={styles.blog}>
       <h1 className={styles.title}>{post.title}</h1>
