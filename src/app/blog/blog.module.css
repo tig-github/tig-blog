@@ -1,0 +1,42 @@
+.blog {
+    min-height: 90vh;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 48px;
+    padding-bottom: 24px;
+}
+
+.blogTitle {
+    font-size: 48px;
+    margin-bottom: 48px;
+}
+
+.date {
+    font-style: italic;
+    margin-bottom: 32px;
+}
+
+.title {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.entry {
+    display: flex;
+    gap: 72px;
+    align-items: flex-end;
+}
+
+.entryList {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.entryTitle {
+    font-size: 24px;
+}
+
+.entryDate {
+    font-style: italic;
+}
