@@ -11,7 +11,8 @@ const getPost = async (id: string) => {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const matterResult = matter(fileContents);
   const post = await remark().use(html).process(matterResult.content);
-  const contentHtml = post.toString();
+  const contentHtml = parseImages(post.toString());
+  console.log(contentHtml);
   return {
     id,
     contentHtml,
@@ -30,6 +31,20 @@ const getAllPosts = async () => {
       })
   );
   return posts;
+};
+
+const parseImages = (content: string) => {
+  return content.replace(
+    /!\[\[([^\]]+)\]\](?:\[(\d+)\])?(?:\[(\d+)\])?(?:\[(.*?)\])?/g,
+    (_, src, width, height, alt) => {
+      const cleanSrc = src.trim();
+      const widthAttr = width ? ` width="${width}"` : "";
+      const heightAttr = height ? ` height="${height}"` : "";
+      const altAttr = alt ? ` alt="${alt.trim()}"` : ' alt=""';
+
+      return `<img src="${cleanSrc}"${widthAttr}${heightAttr}${altAttr} />`;
+    }
+  );
 };
 
 const formatDate = (date: string) => {
