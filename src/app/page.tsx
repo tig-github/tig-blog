@@ -6,7 +6,7 @@ export default async function Home() {
   const posts = await getAllPosts();
   return (
     <div>
-      {posts.map((post: any) => {
+      {[...posts].reverse().map((post: any) => {
         return (
           <div className={styles.blog} key={post.id}>
             <h2 className={styles.title}>
