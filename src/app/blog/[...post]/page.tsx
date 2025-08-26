@@ -2,12 +2,12 @@ import { getPost, formatDate } from "../../../utils/post";
 import styles from "../blog.module.css";
 
 interface PageProps {
-  params: { post: string };
+  params: Promise<{ post: string }>;
 }
 
-export default async function Page(params: PageProps) {
-  let awaited_params = await params.params;
-  let post: any = await getPost(awaited_params.post);
+export default async function Page({ params }: PageProps) {
+  const awaited_params = await params;
+  const post: any = await getPost(awaited_params.post);
   return (
     <div className={styles.blog}>
       <h1 className={styles.title}>{post.title}</h1>

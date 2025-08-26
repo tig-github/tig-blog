@@ -42,3 +42,4 @@ next-env.d.ts
 
 # archive
 tig-blog\posts\archive
+.vercel
