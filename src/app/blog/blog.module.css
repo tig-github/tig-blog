@@ -40,3 +40,7 @@
 .entryDate {
     font-style: italic;
 }
+
+.text {
+  line-height: 21px;
+}

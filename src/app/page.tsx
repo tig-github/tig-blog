@@ -13,7 +13,10 @@ export default async function Home() {
               <Link href={`/blog/${post.id}`}>{post.title}</Link>
             </h2>
             <div className={styles.date}>{formatDate(post.date)}</div>
-            <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+            <div
+              className={styles.text}
+              dangerouslySetInnerHTML={{ __html: post.contentHtml }}
+            />
           </div>
         );
       })}

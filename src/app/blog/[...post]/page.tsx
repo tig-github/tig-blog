@@ -12,7 +12,10 @@ export default async function Page(params: PageProps) {
     <div className={styles.blog}>
       <h1 className={styles.title}>{post.title}</h1>
       <div className={styles.date}>{formatDate(post.date)}</div>
-      <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+      <div
+        className={styles.text}
+        dangerouslySetInnerHTML={{ __html: post.contentHtml }}
+      />
     </div>
   );
 }

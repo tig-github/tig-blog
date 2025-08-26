@@ -12,7 +12,6 @@ const getPost = async (id: string) => {
   const matterResult = matter(fileContents);
   const post = await remark().use(html).process(matterResult.content);
   const contentHtml = parseImages(post.toString());
-  console.log(contentHtml);
   return {
     id,
     contentHtml,
