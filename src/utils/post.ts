@@ -1,52 +1,58 @@
-import { remark } from "remark";
-import html from "remark-html";
-import matter from "gray-matter";
-import fs from "fs";
+import fs from "fs/promises";
 import path from "path";
-import { POST_DIRECTORY } from "./const";
-import { readdir } from "fs/promises";
+import matter from "gray-matter";
+import { remark } from "remark";
+import remarkRehype from "remark-rehype";
+import rehypeSanitize from "rehype-sanitize";
+import rehypeStringify from "rehype-stringify";
 
-const getPost = async (id: string) => {
-  const fullPath = path.join(POST_DIRECTORY, `${id}.md`);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
+const postsDirectory = path.join(process.cwd(), "public/posts");
+
+export interface PostData {
+  id: string;
+  title: string;
+  date: string;
+  contentHtml: string;
+}
+
+export async function getPost(id: string): Promise<PostData> {
+  const fullPath = path.join(postsDirectory, `${id}.md`);
+
+  const fileContents = await fs.readFile(fullPath, "utf8");
+
   const matterResult = matter(fileContents);
-  const post = await remark().use(html).process(matterResult.content);
-  const contentHtml = parseImages(post.toString());
+
+  const processedContent = await remark()
+    .use(remarkRehype) // markdown -> HTML AST
+    .use(rehypeSanitize) // sanitize against XSS
+    .use(rehypeStringify) // HTML AST -> string
+    .process(matterResult.content);
+
+  const contentHtml = processedContent.toString();
+
   return {
     id,
     contentHtml,
-    ...matterResult.data,
+    ...(matterResult.data as { title: string; date: string }),
   };
-};
+}
 
-const getAllPosts = async () => {
-  const files = await readdir(POST_DIRECTORY);
+export async function getAllPosts(): Promise<PostData[]> {
+  const files = await fs.readdir(postsDirectory);
+
   const posts = await Promise.all(
     files
       .filter((file) => file.endsWith(".md"))
       .map(async (file) => {
-        const id = file.slice(0, -3);
-        return await getPost(id);
-      })
+        const id = file.replace(/\.md$/, "");
+        return getPost(id);
+      }),
   );
+
   return posts;
-};
+}
 
-const parseImages = (content: string) => {
-  return content.replace(
-    /!\[\[([^\]]+)\]\](?:\[(\d+)\])?(?:\[(\d+)\])?(?:\[(.*?)\])?/g,
-    (_, src, width, height, alt) => {
-      const cleanSrc = src.trim();
-      const widthAttr = width ? ` width="${width}"` : "";
-      const heightAttr = height ? ` height="${height}"` : "";
-      const altAttr = alt ? ` alt="${alt.trim()}"` : ' alt=""';
-
-      return `<img src="${cleanSrc}"${widthAttr}${heightAttr}${altAttr} />`;
-    }
-  );
-};
-
-const formatDate = (date: string) => {
+export function formatDate(date: string) {
   const months = [
     "January",
     "February",
@@ -63,12 +69,5 @@ const formatDate = (date: string) => {
   ];
 
   const [year, month, day] = date.split("-");
-  const formattedDate = `${months[parseInt(month, 10) - 1]} ${parseInt(
-    day,
-    10
-  )}, ${year}`;
-
-  return formattedDate;
-};
-
-export { getPost, getAllPosts, formatDate };
+  return `${months[parseInt(month, 10) - 1]} ${parseInt(day, 10)}, ${year}`;
+}
