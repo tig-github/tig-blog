@@ -85,14 +85,16 @@ export async function getPost(id: string): Promise<PostData> {
 export async function getAllPosts(): Promise<PostData[]> {
   const files = await fs.readdir(postsDirectory);
 
-  const posts = await Promise.all(
-    files
-      .filter((file) => file.endsWith(".md")) // only markdown
-      .map(async (file) => {
-        const id = file.replace(/\.md$/, "");
-        return getPost(id);
-      }),
-  );
+  const posts = (
+    await Promise.all(
+      files
+        .filter((file) => file.endsWith(".md"))
+        .map(async (file) => {
+          const id = file.replace(/\.md$/, "");
+          return getPost(id);
+        }),
+    )
+  ).sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 
   return posts;
 }
