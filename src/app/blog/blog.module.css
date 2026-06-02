@@ -48,4 +48,9 @@
 .text :global(img) {
   max-width: 100%;
   height: auto;
+  margin-bottom: 1rem;
+}
+
+.text :global(p) {
+  margin-bottom: 1.5rem;
 }
