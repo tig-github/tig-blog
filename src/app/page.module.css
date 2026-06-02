@@ -21,6 +21,10 @@
   line-height: 21px;
 }
 
+.text :global(img) {
+  max-width: 100%;
+  height: auto;
+}
 
 
 /* todo - remove */

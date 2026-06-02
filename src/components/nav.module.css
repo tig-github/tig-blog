@@ -14,3 +14,13 @@
     display: flex;
     gap: 48px;
 }
+
+.portfolio {
+    display: inline;
+}
+
+@media (max-width: 600px) {
+  .portfolio {
+    display: none;
+  }
+}
