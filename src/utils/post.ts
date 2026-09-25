@@ -14,6 +14,7 @@ export interface PostData {
   title: string;
   date: string;
   contentHtml: string;
+  searchText: string;
 }
 
 /**
@@ -75,6 +76,7 @@ export async function getPost(id: string): Promise<PostData> {
   return {
     id,
     contentHtml,
+    searchText: matterResult.content.replace(/!\[\[[^\]]+\]\](?:\[\d+\])?(?:\[\d+\])?(?:\[[^\]]*\])?/g, " "),
     ...(matterResult.data as { title: string; date: string }),
   };
 }

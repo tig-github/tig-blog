@@ -1,0 +1,35 @@
+.searchInput {
+  width: 100%;
+  max-width: 560px;
+  padding: 12px 14px;
+  margin-bottom: 32px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  background: var(--background);
+  color: var(--foreground);
+  font: inherit;
+}
+
+.entryList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.entry {
+  display: flex;
+  gap: 72px;
+  align-items: flex-end;
+}
+
+.entryTitle {
+  font-size: 24px;
+}
+
+.entryDate {
+  font-style: italic;
+}
+
+.noResults {
+  font-style: italic;
+}
