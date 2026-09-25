@@ -41,8 +41,15 @@ function parseImages(content: string) {
   return content.replace(
     /!\[\[([^\]]+)\]\](?:\[(\d+)\])?(?:\[(\d+)\])?(?:\[(.*?)\])?/g,
     (_, src, width, height, alt) => {
-      // No leading slash if images are directly in /public
-      const cleanSrc = `${src.trim()}`;
+      // Files in /public are served from the site root. Without a leading
+      // slash, a post at /blog/<slug> resolves the image relative to /blog.
+      // Encode each path segment so filenames containing spaces work as URLs.
+      const imagePath = src.trim().replace(/\\/g, "/").replace(/^\.\//, "");
+      const cleanSrc = `/${imagePath
+        .split("/")
+        .filter(Boolean)
+        .map((segment: string) => encodeURIComponent(segment))
+        .join("/")}`;
       const w = width ? ` width="${width}"` : "";
       const h = height ? ` height="${height}"` : "";
       const a = alt ? ` alt="${alt.trim()}"` : ' alt=""';
