@@ -1,13 +1,14 @@
 .blog {
     min-height: 90vh;
-    padding-left: 20%;
-    padding-right: 20%;
+    width: min(65ch, calc(100% - 2.5rem));
+    margin-inline: auto;
     padding-top: 48px;
     padding-bottom: 24px;
 }
 
 .blogTitle {
     font-size: 48px;
+    font-family: Georgia, "Times New Roman", serif;
     margin-bottom: 48px;
 }
 
@@ -18,6 +19,7 @@
 
 .title {
     font-size: 48px;
+    font-family: Georgia, "Times New Roman", serif;
     margin-bottom: 16px;
 }
 
@@ -42,7 +44,7 @@
 }
 
 .text {
-  line-height: 21px;
+  line-height: 1.7;
 }
 
 .text :global(img) {

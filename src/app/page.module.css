@@ -1,6 +1,6 @@
 .blog {
-  margin-left: 20%;
-  margin-right: 20%;
+  width: min(65ch, calc(100% - 2.5rem));
+  margin-inline: auto;
   padding-top: 72px;
   padding-bottom: 32px;
   border-top: 0.5px solid black;
@@ -14,11 +14,12 @@
 
 .title {
   font-size: 48px;
+  font-family: Georgia, "Times New Roman", serif;
   margin-bottom: 16px;
 }
 
 .text {
-  line-height: 21px;
+  line-height: 1.7;
 }
 
 .text :global(img) {
