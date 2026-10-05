@@ -1,4 +1,5 @@
 .searchInput {
+  box-sizing: border-box;
   width: 100%;
   max-width: 560px;
   padding: 12px 14px;
@@ -8,6 +9,7 @@
   background: var(--background);
   color: var(--foreground);
   font: inherit;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
 .entryList {
@@ -17,8 +19,9 @@
 }
 
 .entry {
-  display: flex;
-  gap: 72px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
   align-items: flex-end;
 }
 
@@ -28,6 +31,7 @@
 
 .entryDate {
   font-style: italic;
+  text-align: right;
 }
 
 .noResults {
