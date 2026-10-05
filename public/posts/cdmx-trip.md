@@ -3,7 +3,7 @@ title: "My time in CDMX"
 date: "2026-10-04"
 ---
 
-![[IMG_0300.jpg]][600][400][View of the Basilica Santa Maria de Guadalupe]
+![[IMG_0300.webp]][600][400][View of the Basilica Santa Maria de Guadalupe]
 
 Earlier this year I had the great fortune of going on my first solo trip ever, to the legendary Ciudad de Mexico. I have wanted to visit for a very long time, for its incredible history as ancient Tenochtitlan, its unbelievable food scene, its boundless things to do and see, and much more. I was able to spend about 10 days in the city and witnessed an unfathomably massive metropolis with dense city further than the eye could see in every direction. This is the biggest city I've ever been to, and I know I've barely scratched the surface.
 
@@ -11,7 +11,7 @@ This was my first time visiting Mexico and the energy was unmatched. Food stands
 
 I am grateful to have had the opportunity to visit CDMX and would love to come back at some point to eat more of the delicious food. I'll go through some of the areas in the city I visited, my thoughts on the different common neighborhoods and attractions for tourists to visit, and my overall thoughts.
 
-![[IMG_0426 Cropped.png]][600][400][The great cathedral of the Zocalo of Mexico City]
+![[IMG_0426 Cropped.webp]][600][400][The great cathedral of the Zocalo of Mexico City]
 
 At the center of the never ending CDMX lies Centro, built directly on top of the old Mexica city of Tenochtitlan. Centro spans a wide area, though I mostly spent my time in the historic center and its surrounding streets. At the heart is the massive Zocalo, a huge city square. I arrived about a month before the world cup so there was a lot of construction (I have a knack for getting to places when they are building stuff), but it was still a great place to visit. The Catedral Metopolitana de la Ciudad de Mexico is stunning and would be worth visiting Centro for alone. Directly adjacent lies the Museo del Templo Mayor, ruins of the Aztec empire that now are a fascinating museum.
 
@@ -19,7 +19,7 @@ On the streets north of the Zocalo are countless shops organized by street. Its 
 
 Because I was alone and speak almost no Spanish, I didn't end up venturing to Mercado de La Merced or some of the other markets on the eastside of Centro. I would have liked to but ultimately decided to play it safe, though hopefully I can get the chance at some point to see the biggest market in all of Latin America.
 
-![[IMG_0198.jpg]][600][400][Beautiful church in Roma Norte]
+![[IMG_0198.webp]][600][400][Beautiful church in Roma Norte]
 
 Like most tourists I stayed in the popular Roma Norte neighborhood, located southwest of Centro. Its a beautiful neighborhood centrally located in the city with easy metro access making it a solid choice for people visiting. I did enjoy walking around and chilling at the many cafes that line the streets. Plaza Rio de Janeiro was a particularly nice section of it with all sorts of activities going on around it, like a boxing class and some school field trips. In general with CDMX there's always something going on. There's a lot of cool clothing stores and shops that reminded me a lot of Brooklyn or some parts of LA. There's also a ton of nightlife, bars and clubs everywhere, I even remembered there was this one cool cafe that transformed into a bar at night.
 
@@ -29,7 +29,7 @@ All that aside, Roma Norte was lovely and if I visited again, I might choose a h
 
 The food, like everywhere else in CDMX, was great. I do think it is a lot easier to get a mediocre meal here than other areas though. There's a lot of taquerias that are really famous on TikTok and online that tourists flock to. I tried them and, I mean they are good but you can do much better in CDMX, and for a lot cheaper as well. I would definitely do research on where to eat at to try and avoid these spots. One famous spot that was great is Jenni's Quesadillas.
 
-![[IMG_0342.jpg]][600][400][Teotihuacan, the pyramid of the sun]
+![[IMG_0342.webp]][600][400][Teotihuacan, the pyramid of the sun]
 
 Of course I also went to Teotihuacan. The entirely archeological site is outstanding and easily among the best in the world. Teotihuacan is a massive complex of an ancient city from long before the Aztecs that had a hegemonic position in ancient Mesoamerica, acting as a major trade center linking civilizations like the Maya, Zapotecs, Gulf Coast civilizations, and more. The city is so ancient that even the names for its grandest sites, the Pyramid of the Sun and Pyramid of the Moon, are given by the Mexica long after.
 
@@ -37,7 +37,7 @@ The Pyramid of the Sun is gargantuan. To the point where it barely fits into the
 
 When you do visit, I would suggest bringing water and maybe a small snack. It can get hot depending on what time of year you visit in, and there is a lot of walking involved, particularly if you opt to climb the Pyramid of the Moon. This is an absolute must see and should absolutely not be missed on a trip to CDMX.
 
-![[IMG_0212.jpg]][600][400][An incredible exhibit at the museum of anthropology in Chapultepec Park]
+![[IMG_0212.webp]][600][400][An incredible exhibit at the museum of anthropology in Chapultepec Park]
 
 Back in the city is the huge Chapultepec Park, a huge city park with countless monuments, many museums, tons of vendors and a large castle. The park was nice to walk around and lovely to visit just in itself and is worth stopping by. The CDMX Letras in particular are a nice spot on a bridge with a large lake to relax near. I did also stop by the zoo which is completely free. The zoo was nice, I went particularly because I love axolotls and wanted to see some. The exhibit was cool but ultimately I would probably skip the zoo if I didn't have a specific reason to go. They do have a panda named Xin Xin that is actually not owned by China - all other pandas are leased through the Chinese government. But I'm spoiled by the San Diego zoo so I didn't seek her out.
 
@@ -45,13 +45,13 @@ The star of the park is the Museo Nacional de Antropologia. This is, bar none, t
 
 Nearby is Chapultepec Castle, that aforementioned castle that looms over CDMX. The Castle had many uses over history, including being a military academy, the imperial palace of Maximilian I, the residence of Porfirio Diaz, and now the national museum of history. Many of the rooms people lived in were preserve as is for display making it a fascinating peering into the past. There were also larger historical exhibit in the halls detailing different events like the Mexican Revolution and the Mexican-American war. The views from the castle were magnificent, displaying CDMX's skyline and the rest of the park below in a brilliant panorama.
 
-![[IMG_0392.jpg]][600][400][A view of Reforma from Chapultepec Castle]
+![[IMG_0392.webp]][600][400][A view of Reforma from Chapultepec Castle]
 
 I also got to visit the world renowned Basilica Santa Maria de Guadalupe, the largest and most visited pilgrimage site for Catholics in the world. People come from across Mexico and the World, many even on foot, to pray here. The area is a complex of multiple religious buildings, including the old Basilica that is now sinking (Mexico City is sinking), Capillo del Cerrito, and the main basilica built in the 1970s. On the top of the hill you get my favorite view in all of CDMX, of the basilicas and entire city. I absolutely recommend visiting this place.
 
 I also visited Tlalteloco briefly to see the Templo de Santiago. This is the oldest church in all of Mexico City, started in 1521 shortly after the fall of Tenochtitlan. Also in the area is another archeological zone. I'm glad I got to visit this important piece of the city and nation's history, though I wouldn't necessarily say most tourists need to seek out visiting this place unless they have a specific historical interest in it.
 
-![[IMG_0439 Cropped.png]][600][400][The center of Coyocan on a Sunday]
+![[IMG_0439 Cropped.webp]][600][400][The center of Coyocan on a Sunday]
 
 And of course I went down south to Coyocan, a charming colonial neighborhood in the southern part of CDMX. I really enjoyed this area, with the beautiful Parroquia San Juan Bautista church, the many plazas, and lovely architecture everywhere. I went on Sunday so it was incredibly busy and full of visitors and vendors. I enjoyed the atmosphere of this neighborhood and would definitely return, though because it is a little further out I probably wouldn't go out of my way to return. I did love the Mercado Coyocan, specifically the chilaquilas rellenos from madre cocina mexicana. I would and maybe will travel back to CDMX just for those chilaquilas. Mmmmmmmmm.
 
