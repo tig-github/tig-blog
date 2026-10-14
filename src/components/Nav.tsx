@@ -12,6 +12,9 @@ export default function Nav() {
         <Link href="/blog" aria-label="Posts page to view all blog posts">
           Posts
         </Link>
+        <Link href="/places" aria-label="Places page to explore travel posts">
+          Places
+        </Link>
         <a
           href="https://tig-github.github.io/"
           target="_blank"

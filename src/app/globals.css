@@ -1,12 +1,26 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --globe-ocean: #ffffff;
+  --globe-land: #ffffff;
+  --globe-visited: #777777;
+  --globe-active: #555555;
+  --globe-selected: #000000;
+  --globe-line: #000000;
+  --globe-border: #c7c7c7;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --globe-ocean: #0a0a0a;
+    --globe-land: #0a0a0a;
+    --globe-visited: #777777;
+    --globe-active: #aaaaaa;
+    --globe-selected: #ffffff;
+    --globe-line: #737373;
+    --globe-border: #575757;
   }
 }
 

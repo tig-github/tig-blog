@@ -1,6 +1,7 @@
 ---
 title: "A Week in Montreal"
 date: "2026-02-28"
+countries: ["Canada"]
 ---
 
 ![[IMG_9559 Cropped.webp]][600][400][Vieux Montreal next to the Basilique Notre-Dame de Montreal]
