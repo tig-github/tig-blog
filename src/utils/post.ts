@@ -13,6 +13,7 @@ export interface PostData {
   id: string;
   title: string;
   date: string;
+  countries: string[];
   contentHtml: string;
   searchText: string;
 }
@@ -84,7 +85,10 @@ export async function getPost(id: string): Promise<PostData> {
     id,
     contentHtml,
     searchText: matterResult.content.replace(/!\[\[[^\]]+\]\](?:\[\d+\])?(?:\[\d+\])?(?:\[[^\]]*\])?/g, " "),
-    ...(matterResult.data as { title: string; date: string }),
+    ...(matterResult.data as { title: string; date: string; countries?: string[] }),
+    countries: Array.isArray(matterResult.data.countries)
+      ? matterResult.data.countries.filter((country): country is string => typeof country === "string")
+      : [],
   };
 }
 

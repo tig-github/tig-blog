@@ -1,0 +1,27 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(100%, 720px);
+  margin: 0 auto 48px;
+}
+
+.globe {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 620px;
+  touch-action: pan-y;
+  cursor: grab;
+  user-select: none;
+}
+
+.globe:active { cursor: grabbing; }
+.ocean { fill: var(--globe-ocean); stroke: var(--globe-border); stroke-width: 1.5; }
+.country { fill: var(--globe-land); stroke: var(--globe-line); stroke-width: 0.3; stroke-linejoin: round; outline: none; }
+.visited { fill: var(--globe-visited); cursor: pointer; transition: fill 140ms ease; }
+.visited:hover, .visited:focus-visible { fill: var(--globe-active); outline: none; }
+.selected { fill: var(--globe-selected); }
+
+@media (prefers-reduced-motion: reduce) { .visited { transition: none; } }

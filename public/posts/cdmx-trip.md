@@ -1,6 +1,7 @@
 ---
 title: "My time in CDMX"
 date: "2026-10-04"
+countries: ["Mexico"]
 ---
 
 ![[IMG_0300.webp]][600][400][View of the Basilica Santa Maria de Guadalupe]
